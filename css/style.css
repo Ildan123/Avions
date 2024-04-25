@@ -1,0 +1,670 @@
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a2548;
+    --color-nav-links: #726e8d;
+    --font-Clah-Display:"Clah Display"
+}
+
+.button {
+    text-decoration: none;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+.button:hover {
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+
+h2 { 
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 30px;
+}
+    
+.offset {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(15, 14, 14);
+    z-index: 1000;
+}
+
+.offset nav ul {
+    padding-top: 60px;
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 20px;
+}
+
+.offset nav ul a {
+    font-family: var(--font-Clah-Display);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+body>header  {
+    display: grid;
+    row-gap: 20px;
+    padding: 0 2vw;
+    padding: 20px 2vw;
+}
+header hr {
+    border-color: var(--color-lite-gray);
+}
+
+.offset ul a:hover {
+    color: var(--color-dark-primary);
+}
+
+.offset nav {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding: 20px;
+}
+
+.offset nav svg {
+    color: var(--color-white);
+    height: 100%;
+    justify-self: end;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+body>header{
+    display: grid;
+    row-gap: 20px;
+    padding: 20px 2vw;
+    padding-top: 20px;
+    }
+    
+    body>footer a {
+    text-decoration: none;
+    color: var(--color-white);
+    }
+    
+    header>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    }
+
+    header>div div.burger svg#burg {
+        display: none;
+    }
+    
+    header>div span {
+    justify-self: center;
+    font-size: 24px;
+    font-family: 'Clah Display';
+    }
+    
+    header>div div.icons {
+    justify-self: end;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    header>div svg {
+    height: 16px;
+    color: var(--color-dark-primary);
+    }
+    
+    header nav {
+    display: grid;
+    justify-items: center;
+    }
+    
+    header nav ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 4vw;
+    }
+    
+    header nav ul a {
+    text-decoration: none;
+    color: var(--color-nav-linke);
+    font-family: 'Satoshi';
+    font-size: 16px;
+    }
+    
+    header nav ul a:hover {
+    color: var(--color-black);
+    transition: all 0.7s;
+    }
+
+main section.book {
+    position: relative;
+    display: grid;
+    grid-template-rows: 44vw;
+}
+
+main section.book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.book div {
+    position: absolute;
+    right: 8vw;
+    top: 6vw;
+    grid-template-columns: 30vw;
+    bottom: 8vw;
+    display: grid;
+    row-gap: 20px;
+    background-color: var(--color-white);
+    grid-template-rows: max-content;
+    padding: 5vw;
+    
+}
+
+main section.book h1 {
+    font-family: Satoshi;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main section.book div span {
+    font-family: Satoshi;
+    font-size: 18px;
+}
+
+main section.book div a {
+    align-self: end;
+    justify-self: start;
+}
+
+main section.brand {
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.brand h2 {
+    font-family: "Clah Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section.brand div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+}
+
+main section.brand div article {
+    display: grid;
+    grid-template-rows: 24px repeat(2, 1fr);
+    row-gap: 12px;
+    padding: 48px;
+    background-color: var(--color-lite-gray);
+}
+
+main section.brand div article svg {
+    height: 100%;
+}
+
+main section.brand div article h3 {
+    font-family: "Clah Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.brand div article p {
+    font-family: Satoshi;
+}
+
+main section.tovar {
+    display: grid;padding: 80px;
+    display: grid;
+    row-gap: 36px;
+
+}
+
+main section.tovar div {
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main section.tovar div article {
+    display: grid;
+    row-gap: 24px;
+    grid-template-rows: 305px 1fr;
+}
+
+main section.tovar div article:hover {
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+main section.tovar div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.tovar div p {
+    font-family: "Clah Display";
+    font-size: 20px;
+    font-weight: 400;
+    display: grid;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+
+main section.tovar div p span {
+    font-family: Satoshi;
+}
+
+main section.tovar a {
+    justify-self: center;
+}
+
+main section.oblog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 36vw;
+    column-gap: 16px;
+    padding: 60px 6vw;
+}
+
+main section.oblog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.oblog div{
+    display: grid;
+    background-color: var(--color-dark-primary);
+    padding: 5vw;
+    color: var(--color-white);
+    grid-template-rows: max-content;
+    row-gap: 12px;
+}
+
+main section.oblog div a {
+    align-self: end;
+    justify-self: start;
+    background-color: var(--color-nav-links);
+}
+
+main section.oblog div h2 {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 30px;
+}
+
+main section.oblog div span {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+main section.format {
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    padding: 80px 0;
+    background-image: url(../images/bae4257d89397ead63485f276489b3fa.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+    color: var(--color-white);
+    padding: 80px 0;
+
+}
+
+main section.format p {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 18px;
+    width: 40vw;
+    text-align: center;
+
+}
+
+main section.format ul {
+    display: flex;
+    column-gap: 36px;
+}
+
+main section.format ul li {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    align-items: center;
+    column-gap: 4px;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+main section.format form {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+}
+
+main section.format form input {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+}
+
+main section.format form input[type=submit] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+body>footer {
+    display: grid;
+    row-gap: 24px;
+    padding: 60px 6vw 24px 6vw ;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+}
+
+body>footer ul {
+    list-style-type: none;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+body>footer a {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+footer header ul li.ty {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+footer header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    border-bottom: 1px solid var(--color-nav-links);
+    padding-bottom: 48px;
+    align-items: start;
+}
+
+footer header ul   {
+    display: grid;
+    row-gap: 12px;
+}
+
+footer footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+footer footer span {
+    justify-self: start;
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+footer footer ul {
+    display: grid;grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 24px;
+    justify-items: end;
+    justify-self: end;
+    column-gap: 24px;
+}
+
+footer footer ul svg {
+    height: 100%;
+    color: var(--color-white);
+}
+
+footer header form  input:nth-child(1) {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+    background-color: var(--color-nav-links);
+}
+
+footer header form  input {
+    font-family: Satoshi;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header form  input::placeholder {
+    color: var(--color-white);
+}
+
+footer header form[type="submit"] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+footer header form div {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+footer form h4 {
+    font-family: "Clah Display";
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer header form div {
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 390px) {
+    header>div {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    header hr, header nav, header div.icons svg {
+        display: none;
+    }
+
+    header>div span {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: start;
+    }
+
+    header>div svg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: end;
+    }
+
+    header>div div.burger svg#burg {
+        display: block;
+    }
+
+    header>div div.burger {
+        display: flex;
+        justify-self: end;
+        column-gap: 20px;
+        
+    }
+
+    main section.book div {
+        position: static;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        grid-template-columns: 1fr;
+        grid-row: 1/2;
+    }
+
+    main section.book img {
+        grid-row: 2/3;
+    }
+
+    main section.book {
+        grid-template-rows: max-content;
+    }
+
+    main section.book div h1 {
+        font-size: 24px;
+    }
+
+    main section.book div span {
+        font-size: 16px;
+    }
+
+    main section.book div a {
+        justify-self: center;
+        width: 100%;
+    }
+
+    main section.brand h2 {
+        font-size: 20px;
+        text-align-last: left;
+    }
+
+    main section.brand div {
+        grid-template-columns: 1fr;
+        row-gap: 26px;
+    }
+
+    main section.tovar div {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    main section.tovar div article {
+        grid-template-rows: 163px 1fr;
+    }
+
+    main section.tovar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main section.oblog {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        row-gap: 24px;
+    }
+
+    main section.oblog h2 {
+        font-size: 20px;
+    }
+
+    main section.oblog div {
+        row-gap: 30px;
+    }
+
+    main section.oblog div span {
+        font-size: 14px;
+    }
+
+    main section.oblog div a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main section.format {
+        padding: 20px;
+        justify-items: flex-start;
+    }
+
+    main section.format h2 {
+        font-size: 24px;
+    }
+
+    main section.format p {
+        font-size: 14px;
+        text-align: left;
+        width: 100%;
+    }
+
+    main section.format ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    footer header {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 12px;
+    }
+
+    footer header  form {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    footer footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer footer ul {
+        display: none;
+    }
+
+    footer footer span {
+        justify-self: center;
+    }
+}
+
+ 
